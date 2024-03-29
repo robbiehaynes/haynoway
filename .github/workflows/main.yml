@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'public/pdf/*.tex'
+  workflow_dispatch:
 
 jobs:
   build:
