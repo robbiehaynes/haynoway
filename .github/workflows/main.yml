@@ -22,8 +22,17 @@ jobs:
         cd public/pdf/
         pdflatex robhaynes-cv.tex
 
+    - name: Check if PDF exists
+      run: |
+        cd public/pdf/
+        if [ ! -f "robhaynes-cv.pdf" ]; then
+          echo "Error: PDF file not found"
+          exit 1
+        fi
+  
     - name: Commit and push PDF
       run: |
+        cd public/pdf/
         git add robhaynes-cv.pdf
         git commit -m "Auto-generated PDF"
         git push
