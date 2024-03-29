@@ -1,0 +1,22 @@
+name: Compile LaTeX CV
+
+on:
+  push:
+    paths:
+      - 'public/pdf/*.tex'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+      
+    - name: Install LaTeX
+      run: sudo apt-get install texlive-full -y
+      
+    - name: Compile LaTeX CV
+      run: |
+        cd public/pdf/
+        pdflatex robhaynes-cv.tex
