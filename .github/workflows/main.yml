@@ -13,10 +13,27 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
       
+    - name: Cache LaTeX packages
+      uses: actions/cache@v2
+      with:
+        path: ~/.texlive
+        key: texlive-full-${{ runner.os }}-${{ hashFiles('**/texlive.packages') }}
+        restore-keys: |
+          texlive-full-${{ runner.os }}-
+
     - name: Install LaTeX
-      run: sudo apt-get install texlive-full -y
-      
+      run: |
+        sudo apt-get update
+        sudo apt-get install texlive-full -y
+        echo "/usr/local/texlive/*/*" >> ~/.texlive/texlive.packages
+
     - name: Compile LaTeX CV
       run: |
         cd public/pdf/
         pdflatex robhaynes-cv.tex
+
+    - name: Commit and push PDF
+      run: |
+        git add robhaynes-cv.pdf
+        git commit -m "Auto-generated PDF"
+        git push
