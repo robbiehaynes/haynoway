@@ -33,6 +33,8 @@ jobs:
     - name: Commit and push PDF
       run: |
         cd public/pdf/
+        git config --local user.email "robhaynes0420@gmail.com"
+        git config --local user.name "Robert Haynes"
         git add robhaynes-cv.pdf
         git commit -m "Auto-generated PDF"
         git push
