@@ -7,6 +7,10 @@ import Footer from "@/components/Footer";
 // Theme Provider
 import ThemeProvider from "@/components/ThemeProvider";
 
+// Vercel insights
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
+
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
@@ -23,6 +27,8 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
         </ThemeProvider>
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );

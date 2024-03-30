@@ -28,19 +28,19 @@ const reviewsData = [
     review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus doloribus aspernatur provident nobis consequatur corrupti nemo ut? Quisquam, iusto!'
   },
   {
-    avatar: '/reviews/avatar-5.png',
+    avatar: '/reviews/avatar-3.png',
     name: 'Mariusz Truchlewski',
     job: 'Lead Data Engineer at JLR',
     review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus doloribus aspernatur provident nobis consequatur corrupti nemo ut? Quisquam, iusto!'
   },
   {
-    avatar: '/reviews/avatar-3.png',
+    avatar: '/reviews/avatar-4.png',
     name: 'Prabhdeep Singh',
     job: 'Data Engineer at JLR',
     review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus doloribus aspernatur provident nobis consequatur corrupti nemo ut? Quisquam, iusto!'
   },
   {
-    avatar: '/reviews/avatar-4.png',
+    avatar: '/reviews/avatar-5.png',
     name: 'Omar Badawi',
     job: 'Fellow Software Undergraduate at JLR',
     review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus doloribus aspernatur provident nobis consequatur corrupti nemo ut? Quisquam, iusto!'
@@ -51,7 +51,7 @@ const Reviews = () => {
   return (
     <section className="mb-12 xl:mb-32">
       <div className="container mx-auto">
-        <h2 className="section-title mb-12 text-center mx-auto">Reviews</h2>
+        <h2 className="section-title mb-12 text-center mx-auto">Testimonials</h2>
         {/* Slider */}
         <Swiper 
           slidesPerView={1} 

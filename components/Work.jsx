@@ -17,76 +17,52 @@ import ProjectCard from '@/components/ProjectCard';
 
 const projectData = [
   {
-    image: '/work/3.png',
-    category: 'react js',
-    name: 'Nexa Website',
-    description: 'A beautiful, responsive website for a fictional design agency.',
-    link: '/',
-    github: '/'
+    image: '/work/1.webp',
+    category: 'swift',
+    name: 'Hilton Meals App',
+    description: 'An iOS app for a school to view their meals for the current day. Reached 5th on SA App Store in Food & Beverage category. Built with Swift and Firebase',
+    link: null,
+    github: '/https://github.com/robbiehaynes/Hilton-meals-ios'
   },
   {
-    image: '/work/4.png',
-    category: 'react js',
-    name: 'Lumina Website',
-    description: 'A beautiful, responsive website for a fictional design agency.',
-    link: '/',
-    github: '/'
+    image: '/work/2.webp',
+    category: 'web dev',
+    name: 'Equine Group Website',
+    description: 'A website for the leading bloodstock insurance provider in South Africa. Built with HTML/CSS/JS and Bootstrap',
+    link: 'http://www.equine.co.za',
+    github: 'http://www.equine.co.za'
   },
   {
-    image: '/work/2.png',
-    category: 'next js',
-    name: 'Solta Website',
-    description: 'A beautiful, responsive website for a fictional design agency.',
+    image: '/work/6.webp',
+    category: 'web dev',
+    name: 'Portfolio Website',
+    description: 'The site you are on right now :) Built with modern web technology: NextJS, Tailwind CSS, Shadcn UI. Deployed on Vercel.',
     link: '/',
-    github: '/'
+    github: 'https://github.com/robbiehaynes/haynoway'
   },
   {
-    image: '/work/1.png',
-    category: 'react js',
-    name: 'Simba Website',
-    description: 'A beautiful, responsive website for a fictional design agency.',
-    link: '/',
-    github: '/'
+    image: '/work/4.webp',
+    category: 'python',
+    name: 'Arbitrage Finder',
+    description: 'A Python script that fetches betting odds from an API and finds arbitrage opportunities',
+    link: null,
+    github: 'https://github.com/robbiehaynes/arbitrage-finder'
   },
   {
-    image: '/work/3.png',
-    category: 'next js',
-    name: 'Nexa Website',
-    description: 'A beautiful, responsive website for a fictional design agency.',
-    link: '/',
-    github: '/'
+    image: '/work/3.webp',
+    category: 'swift',
+    name: 'Cactused',
+    description: 'A 24 hour challenge for myself before my 18th birthday. A fun drinking game to play with friends',
+    link: null,
+    github: 'https://github.com/robbiehaynes/Cactused'
   },
   {
-    image: '/work/4.png',
-    category: 'react js',
-    name: 'Nexa Website',
-    description: 'A beautiful, responsive website for a fictional design agency.',
-    link: '/',
-    github: '/'
-  },
-  {
-    image: '/work/1.png',
-    category: 'fullstack',
-    name: 'Nexa Website',
-    description: 'A beautiful, responsive website for a fictional design agency.',
-    link: '/',
-    github: '/'
-  },
-  {
-    image: '/work/3.png',
-    category: 'fullstack',
-    name: 'Nexa Website',
-    description: 'A beautiful, responsive website for a fictional design agency.',
-    link: '/',
-    github: '/'
-  },
-  {
-    image: '/work/2.png',
-    category: 'fullstack',
-    name: 'Nexa Website',
-    description: 'A beautiful, responsive website for a fictional design agency.',
-    link: '/',
-    github: '/'
+    image: '/work/5.webp',
+    category: 'java',
+    name: 'KiftoCoin',
+    description: 'A simple cryptocurrency and blockchain built in Java for my final year school project',
+    link: null,
+    github: 'https://github.com/robbiehaynes/KiftoCoin'
   }
 ]
 
@@ -97,7 +73,7 @@ const Work = () => {
         {/* Text */}
         <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
           <h2 className="section-title mb-4">Latest Projects</h2>    
-          <p className="subtitle mb-8">Lorem ipsum dolor sit amet consecteteur adipisicing elit.</p>
+          <p className="subtitle mb-8">Take a look at what I've developed so far, I think it's quite cool</p>
           <Link href='/projects'>
             <Button>All projects</Button>
           </Link>

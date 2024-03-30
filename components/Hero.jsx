@@ -21,9 +21,9 @@ const Hero = () => {
         <div className="flex justify-between gap-x-8">
           {/* text */}
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
-            <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">Web Developer</div>
+            <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">Full-Stack and App Developer</div>
             <h1 className="h1 mb-4">Hello, my name is Rob Haynes</h1>
-            <p className="subtitle max-w-[490px] mx-auto xl:mx-0">Brief description with insights into myself, my vocational journey, and what I engage in professionally.</p>
+            <p className="subtitle max-w-[490px] mx-auto xl:mx-0">A full stack developer and student from South Africa currently based in Manchester studying towards a BSc (Hons) Computer Science</p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
               <Link href='/contact'>
@@ -46,27 +46,26 @@ const Hero = () => {
             <Badge 
               containerStyles="absolute top-[24%] -left-[5rem]"
               icon={<RiBriefcase4Fill />} 
-              endCountNum={3} 
-              badgeText={"Years Of Experience"} 
+              endCountNum={6} 
+              badgeText={"Years Coding Experience"} 
             />
             {/* badge 2 */}
             <Badge 
               containerStyles="absolute top-[80%] -left-[1rem]"
               icon={<RiTodoFill />} 
-              endCountNum={6} 
-              endCountText={'k'}
-              badgeText={"Finished Projects"} 
+              endCountNum={5} 
+              endCountText={'th'}
+              badgeText={"on App Store"} 
             />
             {/* badge 3 */}
             <Badge 
               containerStyles="absolute top-[55%] -right-8"
               icon={<RiTeamFill />} 
-              endCountNum={9} 
-              endCountText={'k'}
-              badgeText={"Happy Clients"} 
+              endCountNum={15}
+              badgeText={"Technologies & Languages"} 
             />
             <div className=" bg-hero_shape_2_light dark:bg-hero_shape_2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
-            <DevImg containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom" imgSrc='/hero/developer.png'/>
+            <DevImg containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom" imgSrc='/hero/developer.webp'/>
           </div>
         </div>
         {/* Icon */}

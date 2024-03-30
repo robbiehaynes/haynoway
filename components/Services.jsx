@@ -5,18 +5,18 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const servicesData = [
   {
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-    title: 'Web Design',
-    description: 'I design and develop beautiful, responsive websites that look great on any device.'
+    title: 'Software Development',
+    description: 'Develop elegant software solutions that solve real-world problems using tools like Python and Java. Taking my time while working with Agile methodologies.'
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
     title: 'Web Development',
-    description: 'I build websites using modern technologies like React, Next.js, and Tailwind CSS.'
+    description: 'Build and deploy websites using modern technologies like React, Next.js, Tailwind CSS and Vercel. Driving traffic with SEO and Google Analytics.'
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
     title: 'App Development',
-    description: 'I develop iOS apps using Swift, and I can help you publish them to the App Store.'
+    description: 'Develop engaging iOS apps using Swift and SwiftUI. Back-end is also a breeze with experience in Firebase, Core Data and Realm.'
   }
 ]
 

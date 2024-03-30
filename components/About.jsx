@@ -127,7 +127,7 @@ const About = () => {
         <div className="flex flex-col xl:flex-row">
           {/* Image */}
           <div className="hidden xl:flex flex-1 relative">
-            <DevImg containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative' imgSrc='/about/developer.png' />
+            <DevImg containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative' imgSrc='/about/developer.webp' />
           </div>
           {/* Tabs */}
           <div className="flex-1">
@@ -142,7 +142,7 @@ const About = () => {
                 {/* Personal */}
                 <TabsContent value='personal'>
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-4">Unmatched Service Quality for 8 Years</h3>
+                    <h3 className="h3 mb-4">Freelance Development for 6 Years</h3>
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">I specialise in crafting intuitive programs with cutting-edge technology, delivering dynamic and engaging user experiences</p>
                     {/* Icons */}
                     <div className="grid xl:grid-cols-2 gap-4 mb-12">
