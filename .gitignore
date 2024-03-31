@@ -34,4 +34,5 @@ yarn-error.log*
 
 # pdf 
 /public/pdf/*
+!/public/pdf/*.pdf
 !/public/pdf/*.tex
