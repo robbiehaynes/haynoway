@@ -11,6 +11,8 @@ const ThemeToggler = () => {
     <div>
         <Button 
           variant="outline" 
+          id="theme-toggler"
+          aria-label="Toggle theme"
           size="icon" 
           onClick={() => setTheme(theme == 'dark' ? 'light' : 'dark')}
         >

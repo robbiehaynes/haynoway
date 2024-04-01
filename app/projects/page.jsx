@@ -11,7 +11,7 @@ const projectData = [
     name: 'Hilton Meals App',
     description: 'An iOS app for a school to view their meals for the current day. Built with Swift and Firebase',
     link: null,
-    github: '/https://github.com/robbiehaynes/Hilton-meals-ios'
+    github: 'https://github.com/robbiehaynes/Hilton-meals-ios'
   },
   {
     image: '/work/2.webp',

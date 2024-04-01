@@ -22,7 +22,7 @@ const projectData = [
     name: 'Hilton Meals App',
     description: 'An iOS app for a school to view their meals for the current day. Reached 5th on SA App Store in Food & Beverage category. Built with Swift and Firebase',
     link: null,
-    github: '/https://github.com/robbiehaynes/Hilton-meals-ios'
+    github: 'https://github.com/robbiehaynes/Hilton-meals-ios'
   },
   {
     image: '/work/2.webp',
