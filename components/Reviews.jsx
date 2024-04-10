@@ -19,31 +19,31 @@ const reviewsData = [
     avatar: '/reviews/avatar-1.png',
     name: 'Luke Morton',
     job: 'Manager at JLR',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus doloribus aspernatur provident nobis consequatur corrupti nemo ut? Quisquam, iusto!'
+    review: "Rob has been a great addition to my team within PI. He is confident, knowledgeable, attentive and very easy to do business with. Rob's insight in to the data engineering world, makes him an asset to any team or business."
   },
   {
     avatar: '/reviews/avatar-2.png',
     name: 'Akhil Thomas',
     job: 'Lead Data Engineer at JLR',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus doloribus aspernatur provident nobis consequatur corrupti nemo ut? Quisquam, iusto!'
+    review: "Rob is a highly personable and enthusiastic individual. He is a valuable asset to any team and I have no doubt he will continue to achieve great things in his career."
   },
   {
     avatar: '/reviews/avatar-3.png',
     name: 'Mariusz Truchlewski',
     job: 'Lead Data Engineer at JLR',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus doloribus aspernatur provident nobis consequatur corrupti nemo ut? Quisquam, iusto!'
+    review: 'Rob is a truly valuable member of our team because of his devotion and pursuit of excellence. His remarkable work ethic, flexibility, and creativity are just a few of his many positive qualities.'
   },
   {
     avatar: '/reviews/avatar-4.png',
     name: 'Prabhdeep Singh',
     job: 'Data Engineer at JLR',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus doloribus aspernatur provident nobis consequatur corrupti nemo ut? Quisquam, iusto!'
+    review: 'Rob is a top-notch programmer, exceptionally organized, and always eager to expand his knowledge. A valuable asset to any team.'
   },
   {
     avatar: '/reviews/avatar-5.png',
     name: 'Omar Badawi',
     job: 'Fellow Software Undergraduate at JLR',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus doloribus aspernatur provident nobis consequatur corrupti nemo ut? Quisquam, iusto!'
+    review: "Rob's exceptional blend of technical prowess and creativity elevates project success. He consistently exceeds expectations, adapting seamlessly to evolving demands"
   },
 ]
 
@@ -67,7 +67,7 @@ const Reviews = () => {
           {reviewsData.map((person, index)=> {
             return <SwiperSlide key={index}>
               <Card className="bg-tertiary dark:bg-secondary/40 p-8 min-h-[300px]">
-                <CardHeader className="p-0 mb-10">
+                <CardHeader className="p-0 mb-6">
                   <div className="flex items-center gap-x-4">
                     {/* Avatar */}
                     <Image src={person.avatar} alt={person.name} width={70} height={70} priority/>
