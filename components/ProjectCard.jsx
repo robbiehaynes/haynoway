@@ -29,6 +29,7 @@ const ProjectCard = ({project}) => {
                 <Link2Icon className="text-white" />
               </Link>
             }
+            {project.github &&
             <Link 
               href={project.github} 
               aria-label={"View "+ project.name + "source code on GitHub"} 
@@ -36,6 +37,8 @@ const ProjectCard = ({project}) => {
             >
               <Github className="text-white" />
             </Link>
+            }
+            
           </div>
         </div>
       </CardHeader>
