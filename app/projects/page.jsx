@@ -18,8 +18,7 @@ const projectData = [
     category: 'web dev',
     name: 'Equine Group Website',
     description: 'A website for the leading bloodstock insurance provider in South Africa. Built with HTML/CSS/JS and Bootstrap',
-    link: 'http://www.equine.co.za',
-    github: 'http://www.equine.co.za'
+    link: 'http://www.equine.co.za'
   },
   {
     image: '/work/6.webp',
