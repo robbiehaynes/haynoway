@@ -6,6 +6,14 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
+    image: '/work/7.webp',
+    category: 'swift',
+    name: 'CyberGrid',
+    description: 'A grid-based strategy game inspired by Reversi, with a cyberpunk aesthetic. Built with Swift',
+    link: '/projects/cybergrid',
+    github: 'https://github.com/robbiehaynes/CyberGrid'
+  },
+  {
     image: '/work/1.webp',
     category: 'swift',
     name: 'Hilton Meals App',
