@@ -1,103 +1,102 @@
-'use client'
-import Link from "next/link"
-import { Button } from "./ui/button"
-
-//import swiper react components
-import { Swiper, SwiperSlide } from 'swiper/react'
-
-//import swiper styles
-import 'swiper/css'
-import 'swiper/css/pagination'
-
-//import required modules
-import { Pagination } from "swiper/modules"
-
-//components
-import ProjectCard from '@/components/ProjectCard';
+import { Github, ExternalLink } from "lucide-react";
+import Reveal from "./Reveal";
 
 const projectData = [
   {
-    image: '/work/1.webp',
     category: 'swift',
     name: 'Hilton Meals App',
     description: 'An iOS app for a school to view their meals for the current day. Reached 5th on SA App Store in Food & Beverage category. Built with Swift and Firebase',
-    link: null,
-    github: 'https://github.com/robbiehaynes/Hilton-meals-ios'
+    href: 'https://github.com/robbiehaynes/Hilton-meals-ios',
+    linkLabel: 'source',
+    icon: Github,
   },
   {
-    image: '/work/2.webp',
     category: 'web dev',
     name: 'Equine Group Website',
     description: 'A website for the leading bloodstock insurance provider in South Africa. Built with HTML/CSS/JS and Bootstrap',
-    link: 'http://www.equine.co.za'
+    href: 'http://www.equine.co.za',
+    linkLabel: 'live site',
+    icon: ExternalLink,
   },
   {
-    image: '/work/6.webp',
     category: 'web dev',
     name: 'Portfolio Website',
-    description: 'The site you are on right now :) Built with modern web technology: NextJS, Tailwind CSS, Shadcn UI. Deployed on Vercel.',
-    link: '/',
-    github: 'https://github.com/robbiehaynes/haynoway'
+    description: "The site you are on right now :) Built with modern web technology: NextJS, Tailwind CSS, Shadcn UI. Deployed on Vercel.",
+    href: 'https://github.com/robbiehaynes/haynoway',
+    linkLabel: 'source',
+    icon: Github,
   },
   {
-    image: '/work/4.webp',
     category: 'python',
     name: 'Arbitrage Finder',
     description: 'A Python script that fetches betting odds from an API and finds arbitrage opportunities',
-    link: null,
-    github: 'https://github.com/robbiehaynes/arbitrage-finder'
+    href: 'https://github.com/robbiehaynes/arbitrage-finder',
+    linkLabel: 'source',
+    icon: Github,
   },
   {
-    image: '/work/3.webp',
     category: 'swift',
     name: 'Cactused',
     description: 'A 24 hour challenge for myself before my 18th birthday. A fun drinking game to play with friends',
-    link: null,
-    github: 'https://github.com/robbiehaynes/Cactused'
+    href: 'https://github.com/robbiehaynes/Cactused',
+    linkLabel: 'source',
+    icon: Github,
   },
   {
-    image: '/work/5.webp',
     category: 'java',
     name: 'KiftoCoin',
     description: 'A simple cryptocurrency and blockchain built in Java for my final year school project',
-    link: null,
-    github: 'https://github.com/robbiehaynes/KiftoCoin'
-  }
+    href: 'https://github.com/robbiehaynes/KiftoCoin',
+    linkLabel: 'source',
+    icon: Github,
+  },
 ]
 
 const Work = () => {
   return (
-    <section className="relative mb-12 xl:mb-48">
-      <div className="container mx-auto">
-        {/* Text */}
-        <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
-          <h2 className="section-title mb-4">Latest Projects</h2>    
-          <p className="subtitle mb-8">Take a look at what I've developed so far, I think it's quite cool</p>
-          <Link href='/projects'>
-            <Button>All projects</Button>
-          </Link>
-        </div>
-        {/* slider */}
-        <div className="xl:max-w-[1000px] xl:absolute right-0 top-0">
-          <Swiper className="h-[480px]" 
-            slidesPerView={1} 
-            breakpoints={{
-              640: {
-                slidesPerView: 2
-              }}} 
-            spaceBetween={30} 
-            modules={[Pagination]} 
-            pagination={{clickable: true}}
+    <section id="work" className="relative z-[1] scroll-mt-20 bg-[color:var(--ds-bg)] px-6 py-16 text-[color:var(--ds-text)]">
+      <Reveal className="container mx-auto">
+        <div className="font-ds-mono mb-2 text-xs uppercase tracking-[3px] text-[color:var(--ds-accent-300)]">// 03 — work</div>
+        <div className="mb-10 flex flex-wrap items-end justify-between gap-6">
+          <div>
+            <h2 className="font-ds-heading mb-3 text-[clamp(30px,3.6vw,42px)] font-bold">Latest Projects</h2>
+          </div>
+          <a
+            href="https://github.com/robbiehaynes"
+            target="_blank"
+            rel="noreferrer"
+            className="font-ds-heading inline-flex items-center gap-2 whitespace-nowrap rounded-md border border-[color:var(--ds-accent)] px-[22px] py-[11px] text-[15px] font-semibold text-[color:var(--ds-accent-300)] no-underline"
           >
-            {/* show only first 4 */}
-            {projectData.slice(0,4).map((project, index)=> {
-              return <SwiperSlide key={index}>
-                <ProjectCard project={project} />
-              </SwiperSlide>
-            })}
-          </Swiper>
+            All projects on GitHub
+          </a>
         </div>
-      </div>
+
+        <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+          {projectData.map((project) => {
+            const Icon = project.icon;
+            return (
+              <div
+                key={project.name}
+                className="group rounded-lg border border-[color:var(--ds-divider)] bg-[color:var(--ds-surface)] p-6 transition-all duration-200 hover:-translate-y-1.5 hover:border-[color:var(--ds-accent-300)]"
+              >
+                <span className="font-ds-mono mb-3.5 inline-block rounded-sm bg-[color:var(--ds-accent-100)] px-2.5 py-1 text-[11px] tracking-wide text-[color:var(--ds-accent-800)]">
+                  {project.category}
+                </span>
+                <h4 className="font-ds-heading mb-2 text-[19px] font-semibold">{project.name}</h4>
+                <p className="mb-3.5 text-sm leading-relaxed text-[color:var(--ds-text-muted)]">{project.description}</p>
+                <a
+                  href={project.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-ds-mono inline-flex items-center gap-1.5 text-xs text-[color:var(--ds-accent-300)] no-underline"
+                >
+                  <Icon size={14} /> {project.linkLabel}
+                </a>
+              </div>
+            );
+          })}
+        </div>
+      </Reveal>
     </section>
   )
 }

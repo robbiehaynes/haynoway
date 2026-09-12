@@ -22,6 +22,8 @@ const Header = () => {
     return () => window.removeEventListener('scroll', scrollYPos);
   });
 
+  if (pathname === '/') return null;
+
   return (
     <header className={`${
         header 
