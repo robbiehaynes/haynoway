@@ -1,6 +1,12 @@
+'use client';
+
+import { usePathname } from "next/navigation";
 import Socials from "./Socials"
 
 const Footer = () => {
+  const pathname = usePathname();
+  if (pathname === '/') return null;
+
   return (
     <footer className="bg-secondary py-12">
       <div className="container mx-auto">

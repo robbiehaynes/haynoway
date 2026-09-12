@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   @layer base {
     :root {
@@ -86,10 +90,30 @@
   @apply text-4xl font-bold relative w-max flex items-center justify-between gap-x-3 before:bg-dots_light before:dark:bg-dots_dark before:bg-no-repeat before:bg-center before:w-[24px] before:h-[24px];
 }
 
-.badge {
-  @apply z-10 w-[200px] h-[68px] bg-white dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-[10px] flex items-center gap-x-4;
+/* Dev site (homepage) theme */
+:root {
+  --ds-bg: color-mix(in srgb, #2d2b2b 88%, black);
+  --ds-surface: #444141;
+  --ds-divider: color-mix(in srgb, #f8f4f4 13%, transparent);
+  --ds-divider-strong: color-mix(in srgb, #f8f4f4 24%, transparent);
+  --ds-text: #f8f4f4;
+  --ds-text-muted: color-mix(in srgb, #f8f4f4 58%, transparent);
+  --ds-accent-100: #fff3e4;
+  --ds-accent-300: #facb8d;
+  --ds-accent-800: #5a3b0a;
+  --ds-accent: #b68235;
+  --ds-shadow-sm: 0 1px 2px rgba(0,0,0,.35);
+  --ds-shadow-md: 0 6px 20px rgba(0,0,0,.4);
+  --ds-shadow-lg: 0 20px 50px rgba(0,0,0,.5);
 }
 
-.swiper-horizontal > .section-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  @apply bg-primary;
+@keyframes ds-blink { 0%, 45% { opacity: 1; } 50%, 100% { opacity: 0; } }
+@keyframes ds-drift-grid { from { background-position: 0 0; } to { background-position: 120px 120px; } }
+@keyframes ds-float-slow { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@keyframes ds-bounce-arrow { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-animate-grid, .ds-animate-float, .ds-animate-bounce, .ds-animate-blink {
+    animation: none !important;
+  }
 }
