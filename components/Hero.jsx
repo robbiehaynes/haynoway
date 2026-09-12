@@ -157,7 +157,7 @@ const Hero = () => {
               <Users size={22} color="#b68235" strokeWidth={1.8} />
               <div>
                 <div className="font-ds-mono text-xl font-semibold leading-none text-[#201f1d] tabular-nums">
-                  <CountUp end={15} delay={1} duration={2} />+
+                  <CountUp end={25} delay={1} duration={2} />+
                 </div>
                 <div className="max-w-[100px] text-[11px] leading-tight text-[#605d5d]">Technologies &amp; Languages</div>
               </div>
