@@ -4,10 +4,10 @@ A lot has changed since I originally developed my portfolio website back in 2018
 
 ## Built with:
 
-- :computer: **Front-end**: [NextJS 14](https://nextjs.org)
+- :computer: **Front-end**: [NextJS 15](https://nextjs.org)
 - :art: **Styling**: [TailwindCSS](https://tailwindcss.com), [shadcn/ui](https://ui.shadcn.com)
-- :electric_plug: **Back-end**: NextJS App Routers, [Nodemailer](https://www.npmjs.com/package/nodemailer)
-- :key: **Deployed on**: [Vercel](https://vercel.com/)
+- :electric_plug: **Back-end**: NextJS App Router
+- :key: **Deployed on**: [Cloudflare Workers](https://workers.cloudflare.com/) via [OpenNext](https://opennext.js.org/cloudflare)
 
 ## CI/CD
 

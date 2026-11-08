@@ -1,4 +1,5 @@
-import { Github, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { RiGithubFill as Github } from "react-icons/ri";
 import Reveal from "./Reveal";
 
 const projectData = [

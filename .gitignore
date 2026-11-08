@@ -36,3 +36,7 @@ yarn-error.log*
 /public/pdf/*
 !/public/pdf/*.pdf
 !/public/pdf/*.tex
+# cloudflare
+.open-next
+.wrangler
+.dev.vars

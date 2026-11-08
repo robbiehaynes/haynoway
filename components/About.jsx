@@ -1,10 +1,10 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { User2, MailIcon, HomeIcon, GraduationCap, Calendar, Briefcase, Coffee, Database, Webhook, Boxes, FlaskConical, Globe } from 'lucide-react';
+import { User2, MailIcon, HomeIcon, GraduationCap, Calendar, Briefcase, Coffee, Database, Webhook, Boxes, FlaskConical, Globe, ChartColumn, ChartNoAxesCombined, CodeXml } from 'lucide-react';
 import {
   SiSwift, SiPython, SiTypescript, SiJavascript, SiC, SiCplusplus,
   SiPostgresql, SiMysql, SiMongodb, SiRedis, SiGnubash,
   SiGit, SiGithubactions, SiGitlab, SiKubernetes, SiDocker, SiGooglecloud,
-  SiPowerbi, SiTableau, SiFigma, SiFirebase, SiReact, SiVisualstudiocode, SiTailwindcss,
+  SiFigma, SiFirebase, SiReact, SiTailwindcss,
 } from 'react-icons/si';
 import Reveal from "./Reveal";
 
@@ -49,14 +49,14 @@ const techData = [
   { name: 'Kubernetes', Icon: SiKubernetes },
   { name: 'Docker', Icon: SiDocker },
   { name: 'GCP', Icon: SiGooglecloud },
-  { name: 'Power BI', Icon: SiPowerbi },
-  { name: 'Tableau', Icon: SiTableau },
+  { name: 'Power BI', Icon: ChartColumn },
+  { name: 'Tableau', Icon: ChartNoAxesCombined },
   { name: 'Unit & Integration Testing', Icon: FlaskConical },
   { name: 'Web Development', Icon: Globe },
   { name: 'Figma', Icon: SiFigma },
   { name: 'Firebase', Icon: SiFirebase },
   { name: 'React', Icon: SiReact },
-  { name: 'VS Code', Icon: SiVisualstudiocode },
+  { name: 'VS Code', Icon: CodeXml },
   { name: 'Tailwind CSS', Icon: SiTailwindcss },
 ];
 
