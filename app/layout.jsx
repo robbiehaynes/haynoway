@@ -3,8 +3,6 @@ import "./globals.css";
 
 // Components
 import Footer from "@/components/Footer";
-// Theme Provider
-import ThemeProvider from "@/components/ThemeProvider";
 
 // Vercel insights
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -22,12 +20,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body className={`${outfit.className} ${dsHeading.variable} ${dsBody.variable} ${dsMono.variable}`}>
-        <ThemeProvider attribute='class' defaultTheme='light'>
-          {children}
-          <Footer />
-        </ThemeProvider>
+        {children}
+        <Footer />
         <SpeedInsights />
         <Analytics />
       </body>
