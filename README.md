@@ -12,7 +12,7 @@ A lot has changed since I originally developed my portfolio website back in 2018
 ## CI/CD
 
 While working for JLR we had CI/CD pipelines to compile and test executables and web applications which I found fascinating. So fascinating infact that I thought I would incorporate CI/CD into this project in various ways :hammer:
-- The site being deployed on Vercel means any commits pushed to the master branch instantly trigger a build and deploy to haynoway.com
+- The site being deployed on Cloudflare means any commits pushed to the master branch instantly trigger a build and deploy to haynoway.com
 - My CV is automatically compiled with pdflatex when there is a .tex file pushed to public/pdf making it instantly available on my site. To find out more take a look at the pipeline's [YAML file](https://github.com/robbiehaynes/haynoway/blob/4b3f5dd54fd90d0e311adc6a4ce8002f0d54ee53/.github/workflows/main.yml)
 
 ## Installation

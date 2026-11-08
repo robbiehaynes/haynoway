@@ -1,12 +1,6 @@
 import { Outfit, Cormorant_Garamond, Lora, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-// Components
-import Footer from "@/components/Footer";
-
-// Vercel insights
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/react"
 
 const outfit = Outfit({ subsets: ["latin"] });
 const dsHeading = Cormorant_Garamond({ subsets: ["latin"], weight: ["600", "700"], variable: "--font-ds-heading" });
@@ -23,9 +17,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${outfit.className} ${dsHeading.variable} ${dsBody.variable} ${dsMono.variable}`}>
         {children}
-        <Footer />
-        <SpeedInsights />
-        <Analytics />
       </body>
     </html>
   );
