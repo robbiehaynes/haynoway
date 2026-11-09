@@ -29,10 +29,11 @@ yarn-error.log*
 # local env files
 .env*.local
 
-# vercel
-.vercel
-
 # pdf 
 /public/pdf/*
 !/public/pdf/*.pdf
 !/public/pdf/*.tex
+# cloudflare
+.open-next
+.wrangler
+.dev.vars

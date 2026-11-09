@@ -1,4 +1,5 @@
-import { Github, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { RiGithubFill as Github } from "react-icons/ri";
 import Reveal from "./Reveal";
 
 const projectData = [
@@ -21,7 +22,7 @@ const projectData = [
   {
     category: 'web dev',
     name: 'Portfolio Website',
-    description: "The site you are on right now :) Built with modern web technology: NextJS, Tailwind CSS, Shadcn UI. Deployed on Vercel.",
+    description: "The site you are on right now :) Built with modern web technology: NextJS, Tailwind CSS, Shadcn UI. Deployed on Cloudflare.",
     href: 'https://github.com/robbiehaynes/haynoway',
     linkLabel: 'source',
     icon: Github,

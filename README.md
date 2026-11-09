@@ -4,15 +4,15 @@ A lot has changed since I originally developed my portfolio website back in 2018
 
 ## Built with:
 
-- :computer: **Front-end**: [NextJS 14](https://nextjs.org)
+- :computer: **Front-end**: [NextJS 15](https://nextjs.org)
 - :art: **Styling**: [TailwindCSS](https://tailwindcss.com), [shadcn/ui](https://ui.shadcn.com)
-- :electric_plug: **Back-end**: NextJS App Routers, [Nodemailer](https://www.npmjs.com/package/nodemailer)
-- :key: **Deployed on**: [Vercel](https://vercel.com/)
+- :electric_plug: **Back-end**: NextJS App Router
+- :key: **Deployed on**: [Cloudflare Workers](https://workers.cloudflare.com/) via [OpenNext](https://opennext.js.org/cloudflare)
 
 ## CI/CD
 
 While working for JLR we had CI/CD pipelines to compile and test executables and web applications which I found fascinating. So fascinating infact that I thought I would incorporate CI/CD into this project in various ways :hammer:
-- The site being deployed on Vercel means any commits pushed to the master branch instantly trigger a build and deploy to haynoway.com
+- The site being deployed on Cloudflare means any commits pushed to the master branch instantly trigger a build and deploy to haynoway.com
 - My CV is automatically compiled with pdflatex when there is a .tex file pushed to public/pdf making it instantly available on my site. To find out more take a look at the pipeline's [YAML file](https://github.com/robbiehaynes/haynoway/blob/4b3f5dd54fd90d0e311adc6a4ce8002f0d54ee53/.github/workflows/main.yml)
 
 ## Installation
